@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Utgift — Household Expense Tracking with AI Receipt Scanning</title>
+  <meta name="description" content="Track household expenses together. Scan receipts with AI, set budgets, and get spending insights. Free for iOS.">
+  <meta name="theme-color" content="#00D084">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Utgift — Household Expense Tracking">
+  <meta property="og:description" content="Scan receipts with AI, set budgets, and get spending insights for your whole household.">
+  <meta property="og:image" content="assets/app-icon.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Utgift — Household Expense Tracking">
+  <meta name="twitter:description" content="Scan receipts with AI, set budgets, and get spending insights for your whole household.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/app-icon.png">
+  <link rel="apple-touch-icon" href="assets/app-icon.png">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#" class="nav__brand">
+        <img src="assets/app-icon.png" alt="Utgift icon" class="nav__icon">
+        <span class="nav__wordmark">Utgift</span>
+      </a>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav__links" id="nav-links">
+        <a href="#features">Features</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#download" class="btn btn--sm">Download</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <h1>Your household expenses, sorted.</h1>
+          <p class="hero__sub">Utgift uses AI to scan receipts, track spending, and help your whole household budget smarter. Just snap, and you're done.</p>
+          <div class="hero__actions">
+            <a href="#download" class="btn btn--primary btn--lg" onclick="showComingSoon(event)">Coming Soon on the App Store</a>
+            <a href="#how-it-works" class="btn btn--ghost btn--lg">See how it works</a>
+          </div>
+        </div>
+        <div class="hero__visual">
+          <div class="phone-frame">
+            <div class="phone-screen">
+              <img src="assets/screenshot.png" alt="Utgift app showing receipts list with categorized expenses">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features" id="features">
+      <div class="container">
+        <h2 class="section-title">Everything you need to stay on budget</h2>
+        <div class="features__grid">
+
+          <div class="card">
+            <div class="card__icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+            </div>
+            <h3>Smart Receipt Scanning</h3>
+            <p>Point your camera at any receipt. AI extracts the store, items, amounts, and categories automatically.</p>
+          </div>
+
+          <div class="card">
+            <div class="card__icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3>Household Collaboration</h3>
+            <p>Invite family members and track everyone's spending in one place with shared budgets and receipts.</p>
+          </div>
+
+          <div class="card">
+            <div class="card__icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26z"/></svg>
+            </div>
+            <h3>AI Spending Insights</h3>
+            <p>Get personalized monthly financial advice. Understand your patterns and find opportunities to save.</p>
+          </div>
+
+          <div class="card">
+            <div class="card__icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+            </div>
+            <h3>Budget Tracking</h3>
+            <p>Set per-category spending limits with visual progress bars and overspend alerts.</p>
+          </div>
+
+          <div class="card">
+            <div class="card__icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg>
+            </div>
+            <h3>Analytics Dashboard</h3>
+            <p>Pie charts, line charts, and breakdowns by category, time period, and payment card.</p>
+          </div>
+
+          <div class="card">
+            <div class="card__icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+            </div>
+            <h3>Share Extension</h3>
+            <p>Import digital receipts from email or any app via the iOS share sheet.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Category Strip -->
+    <section class="categories">
+      <div class="container">
+        <div class="categories__strip">
+          <span class="category-pill" style="--cat-color: #34C759">Groceries</span>
+          <span class="category-pill" style="--cat-color: #FF9500">Dining</span>
+          <span class="category-pill" style="--cat-color: #007AFF">Transport</span>
+          <span class="category-pill" style="--cat-color: #AF52DE">Entertainment</span>
+          <span class="category-pill" style="--cat-color: #FF3B30">Healthcare</span>
+          <span class="category-pill" style="--cat-color: #A2845E">Home</span>
+          <span class="category-pill" style="--cat-color: #30B0C7">Travel</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="how-it-works">
+      <div class="container">
+        <h2 class="section-title">From receipt to insight in seconds</h2>
+        <div class="steps">
+          <div class="step">
+            <div class="step__number">1</div>
+            <div class="step__icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+            </div>
+            <h3>Scan</h3>
+            <p>Take a photo of your receipt or import from any app.</p>
+          </div>
+          <div class="step__connector"></div>
+          <div class="step">
+            <div class="step__number">2</div>
+            <div class="step__icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <h3>Review</h3>
+            <p>AI extracts every detail. Edit if needed, then save.</p>
+          </div>
+          <div class="step__connector"></div>
+          <div class="step">
+            <div class="step__number">3</div>
+            <div class="step__icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+            </div>
+            <h3>Track</h3>
+            <p>See spending analytics, get budget alerts, and receive AI insights.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta" id="download">
+      <div class="container cta__inner">
+        <h2>Start tracking smarter today</h2>
+        <p>Utgift is coming soon to the App Store.</p>
+        <a href="#" class="btn btn--white btn--lg" onclick="showComingSoon(event)">Coming Soon on the App Store</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="assets/app-icon.png" alt="Utgift" class="footer__icon">
+        <span>Utgift</span>
+      </div>
+      <div class="footer__links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="footer__copy">
+        &copy; 2026 Utgift. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast -->
+  <div class="toast" id="toast">Utgift is coming soon to the App Store!</div>
+
+  <script>
+    // Coming soon toast
+    function showComingSoon(e) {
+      e.preventDefault();
+      const toast = document.getElementById('toast');
+      toast.classList.add('toast--visible');
+      setTimeout(() => toast.classList.remove('toast--visible'), 2500);
+    }
+
+    // Nav scroll effect
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('nav--scrolled', window.scrollY > 50);
+    });
+
+    // Mobile menu toggle
+    const toggle = document.getElementById('nav-toggle');
+    const links = document.getElementById('nav-links');
+    toggle.addEventListener('click', () => {
+      links.classList.toggle('nav__links--open');
+      toggle.classList.toggle('nav__toggle--active');
+    });
+
+    // Close mobile menu on link click
+    links.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        links.classList.remove('nav__links--open');
+        toggle.classList.remove('nav__toggle--active');
+      });
+    });
+  </script>
+
+</body>
+</html>
